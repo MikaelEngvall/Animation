@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-   <h1><span class="js-letter"></span>Animation project</h1> 
+   <h1><span class="js-letter">Animation project</span></h1> 
 
    <script>
 
@@ -34,9 +34,9 @@
 
         letters.forEach(letter => {
             let classes = ''
-            /*if(letter !== ' '){*/
+            if(letter !== ' '){
                 classes = 'letter js-letter'
-            /*}*/
+            }
             html = html + `<span class='${classes}'>${letter}</span>`
         })
         h1.innerHTML = html
