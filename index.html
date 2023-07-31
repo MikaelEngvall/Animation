@@ -33,10 +33,11 @@
         let html = ""
 
         letters.forEach(letter => {
-            let classes = ''
-            if(letter !== ' '){
-                classes = 'letter js-letter'
+            if(letter==" "){
+                letter = "&nbsp"
             }
+            let classes = ''
+            classes = 'letter js-letter'
             html = html + `<span class='${classes}'>${letter}</span>`
         })
         h1.innerHTML = html
